@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sign-in-out.css" type="text/css" />
+  <title>Login | Wheels n' Deals</title>
+  <link rel="icon" href="logo/white-wnd-icon.png">
+  <script src="https://kit.fontawesome.com/ec4ce7b9c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- PRIMARY MENUS -->
+      <div class="menu">
+        <div class="primary-menu">
+          <!-- LOGO -->
+          <div class="logo">
+            <a class="navbar_logo" href="Wheels n' Deals.html">
+              <img src="logo/wnd_logo.png" height="50px" width="50px" />
+            </a>
+          </div>
+          <li><a href="Wheels n' Deals.html">Home</a></li>
+          <li class="shop-page">
+            <a href="shop.html">Shop</a>
+            <!-- DROPDOWN PRIMARY MENU -->
+            <ul class="shop-dropdown">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="finance.html">Finance</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+        </div>
+        <div class="secondary-menu">
+          <li><a class="active" href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+  <!--START CONTAINER FOR SIGN-IN AND SIGN-UP-->
+  <div id="form" class="form-container">
+    <div id="signup-form" class="user-admin">
+      <!--FOR GRADIENT DESIGN WITH LOGO-->
+      <section id="signup-form-left">
+        <div id="form-logo" class="signup-form-logo">
+          <div id="logobg-img" class="text-title">
+            <h3>A car for every purse and Purpose</h3>
+            <div id="logo-img" class="margintop30">
+              <a href="Wheels n' Deals.html">
+                <img src="logo/gray-wnd-logo.png" class="circle-logo" width="100px" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--RIGHT SIDE FOR INPUT VALUES OF SIGN-IN AND SIGN-UP-->
+      <aside id="sidebar-right" class="position-relative">
+        <div id="login-form" class="signin-form pad30">
+          <h2 class="bold h3 margintop50">Welcome Back!</h2>
+
+          <form action="/authenticate" class="signin-form" method="POST" novalidate="">
+
+            <fieldset>
+              <label for="username">Email address</label>
+              <input type="text" id="username" name="_username" value="" class="email-txtbordered" autocomplete="off"
+                autofocus="" />
+            </fieldset>
+
+            <fieldset>
+              <label>Password</label>
+              <input type="password" name="_password" id="password" class="pass-txtbordered" autocomplete="off" />
+            </fieldset>
+
+            <input type="hidden" name="_target_path" value="" />
+            <div class="rem-for-container">
+              <label for="remember_me" class="nomargin">
+                <input type="checkbox" id="remember_me" name="_remember_me" class="highlighted" checked="" />
+                Remember me
+              </label>
+
+              <small class="forgot-pass-txtcenter">
+                <a href="" class="">Forgot your password?</a>
+              </small>
+            </div>
+
+            <button type="submit" class="button-signin">Login</button>
+
+          </form>
+        </div>
+
+        <div id="signup" class="goto-signup">
+          <p class="ask-smalltxt">Don't have an account yet? <a href="signup.html">Signup</a></p>
+        </div>
+
+      </aside>
+      <!--RIGHT SIDE FOR INPUT VALUES OF SIGN-IN AND SIGN-UP-->
+    </div>
+  </div>
+  <!--END CONTAINER FOR SIGN-IN AND SIGN-UP-->
+</body>
+</html>
